@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robots.txt Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container mt-4">
+        <div class="text-center mb-4">
+            <h1>Robots.txt Generator</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="user-agent">User-agent:</label>
+                    <input type="text" class="form-control" id="user-agent" value="*">
+                </div>
+                <div id="rules-container">
+                    <!-- Dynamic rules will be added here -->
+                </div>
+                <button class="btn btn-secondary" id="add-rule-btn">Add Rule</button>
+                <hr>
+                <button class="btn btn-primary" id="generate-btn">Generate Robots.txt</button>
+                <div class="mt-4">
+                    <label for="generated-robots">Generated Robots.txt</label>
+                    <textarea id="generated-robots" class="form-control" rows="10" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="text-center mt-4"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/robots-txt-generator.js"></script>
+</body>
+</html> 

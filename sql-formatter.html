@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Formatter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container mt-4">
+        <div class="text-center mb-4">
+            <h1>SQL Formatter</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="sql-input">Enter SQL</label>
+                    <textarea class="form-control" id="sql-input" rows="10"></textarea>
+                </div>
+                <button class="btn btn-primary" id="format-btn">Format SQL</button>
+                <div class="mt-4">
+                    <label for="formatted-sql">Formatted SQL</label>
+                    <textarea id="formatted-sql" class="form-control" rows="10" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="text-center mt-4"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sql-formatter@latest/dist/sql-formatter.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/sql-formatter.js"></script>
+</body>
+</html> 
