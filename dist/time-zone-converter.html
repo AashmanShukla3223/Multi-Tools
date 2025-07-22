@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container mt-4">
+        <div class="text-center mb-4">
+            <h1>Time Zone Converter</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="date-input">Date</label>
+                        <input type="date" class="form-control" id="date-input">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="time-input">Time</label>
+                        <input type="time" class="form-control" id="time-input">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="from-timezone">From Timezone</label>
+                        <select id="from-timezone" class="form-control"></select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="to-timezone">To Timezone</label>
+                        <select id="to-timezone" class="form-control"></select>
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="convert-btn">Convert Time</button>
+                <div id="result" class="mt-4"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="text-center mt-4"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/time-zone-converter.js"></script>
+</body>
+</html> 

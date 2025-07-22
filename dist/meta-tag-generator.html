@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Tag Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container mt-4">
+        <div class="text-center mb-4">
+            <h1>Meta Tag Generator</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="site-title">Site Title</label>
+                    <input type="text" class="form-control" id="site-title" placeholder="Enter your site title">
+                </div>
+                <div class="form-group">
+                    <label for="site-description">Site Description</label>
+                    <textarea class="form-control" id="site-description" rows="3" placeholder="Enter your site description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="site-keywords">Keywords (comma-separated)</label>
+                    <input type="text" class="form-control" id="site-keywords" placeholder="Enter your keywords">
+                </div>
+                <button class="btn btn-primary" id="generate-btn">Generate Meta Tags</button>
+                <div class="mt-4">
+                    <textarea id="generated-tags" class="form-control" rows="5" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="text-center mt-4"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/meta-tag-generator.js"></script>
+</body>
+</html> 

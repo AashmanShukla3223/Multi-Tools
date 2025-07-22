@@ -1,0 +1,42 @@
+{
+  "name": "multi-tools-mobile",
+  "version": "1.0.0",
+  "description": "Multi-Tools: All-in-One Utility App with 50+ essential tools",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "python3 -m http.server 8080",
+    "serve": "python3 -m http.server 8080",
+    "cap:sync": "npx cap sync",
+    "cap:build": "npm run build && npx cap sync",
+    "cap:android": "npx cap open android",
+    "cap:ios": "npx cap open ios"
+  },
+  "keywords": [
+    "calculator",
+    "converter",
+    "tools",
+    "utility",
+    "productivity",
+    "mobile",
+    "app",
+    "offline"
+  ],
+  "author": "Multi-Tools Developer",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/haptics": "^6.0.0",
+    "@capacitor/keyboard": "^6.0.0",
+    "@capacitor/status-bar": "^6.0.0",
+    "@capacitor/splash-screen": "^6.0.0",
+    "@capacitor/share": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.0"
+  }
+}
